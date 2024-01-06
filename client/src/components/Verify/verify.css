@@ -1,0 +1,56 @@
+body{
+    background-color: white;
+}
+
+.verify_loading{
+    text-align: center;
+    margin-top: 50px;
+   
+}
+.verify_loading img{
+    width: 20%;
+    height: 20%;
+   
+}
+
+.verify{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 90px;
+}
+.verify h1{
+    color: black;
+}
+.verify button{
+    margin-top: 1rem;
+    background-color: #0bb3f5;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.verify button:hover{
+    background-color: yellow;
+}
+
+.verify button:active{
+    
+    transform: scale(0.92);
+}
+
+
+@media (max-width:400px){
+    .verify_loading img{
+        width: 150px;
+        margin-top: 1rem;
+    }
+    .verify img{
+        width: 150px;
+    }
+    .verify h1{
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.main-header{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    justify-content: center;
+    height: 100vh;
+   
+}
+   
+   
+
+ .main_container{
+    margin-top: -75px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+    background: url("https://media.tenor.com/8zsiCZIpxS8AAAAC/rainbow-stars-kidcore.gif");
+    background-color: rgb(210, 230, 32);
+    
+    
+    border-radius: 1.5rem;
+    
+}
+
+@media (max-width:400px) {
+    .main_container{
+        width: 300px;
+        height: 250px;
+       
+        
+    }
+    .main_container h2{
+        font-size: 30px;
+    }
+}
