@@ -16,7 +16,7 @@ const Signup = () => {
         return alert("Please fill the all details");
        }
     
-    const {data} = await axios.post("http://localhost:4000/user/signup",{
+    const {data} = await axios.post("https://email-login-fjv7.onrender.com/user/signup",{
       name,email,password,age,contactNo,
     });
     console.log(data);
@@ -38,7 +38,7 @@ const Signup = () => {
     <input type="number" required value={contactNo} onChange={(e)=>setContactNo(e.target.value)} placeholder='ContactNo' /> <br />
 
     <button  className='btn-btn' type='submit' onClick={handleClick} > Submit</button>
-    <p className='para-signup'>Do you have an accunt?<a href="/">login</a></p>
+    <p className='para-signup'>Do you have an accunt?<a href="/login">login</a></p>
     </div>
    
 

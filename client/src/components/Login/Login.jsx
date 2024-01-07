@@ -14,7 +14,7 @@ const Login = () => {
     if(!email || !password){
       return alert("Please fill the details");
     }else {
-    const response = await axios.post("http://localhost:4000/user/login",{
+    const response = await axios.post("https://email-login-fjv7.onrender.com/user/login",{
       email,
       password,
       
@@ -55,7 +55,7 @@ const Login = () => {
         onChange={(e)=>setPassword(e.target.value)}
         placeholder='Password' /> <br />
         <button  className='btn-btn' type='submit' onClick={handleSignup}> Submit</button>
-        <p className='para-login'>Don't you have an accunt?<a href="/signup">signup</a></p>
+        <p className='para-login'>Don't you have an accunt?<a href="/">signup</a></p>
         </div>
        
 

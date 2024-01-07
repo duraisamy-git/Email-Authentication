@@ -28,7 +28,7 @@ export default userSlice.reducer;
 
 export const handleLogin = (token)=>{
     return async (dispatch) =>{
-        const response = await axios.get("http://localhost:4000/user/data", {
+        const response = await axios.get("https://email-login-fjv7.onrender.com/user/data", {
             headers:{
                 Authorization:token,
             },

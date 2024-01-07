@@ -9,7 +9,7 @@ const Verify = () => {
    
     const verifyUser = async ()=>{
         try {
-            const response = await axios.get(`http://localhost:4000/user/verify/${token}`
+            const response = await axios.get(`https://email-login-fjv7.onrender.com/user/verify/${token}`
             );
             alert(response.data.msg);
             setLoading(false);
@@ -43,7 +43,7 @@ const Verify = () => {
         alt=""  
         className='verified'
         />
-        <Link to="/">
+        <Link to="/login">
          <button>Login Now</button>
         </Link>
     </div>
