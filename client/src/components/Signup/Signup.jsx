@@ -22,6 +22,8 @@ const Signup = () => {
     console.log(data);
     alert(data.msg);
     
+    navigate("/login");
+    
     
   }
   
@@ -31,11 +33,11 @@ const Signup = () => {
       
     <div className="signup_form" >
    <h1>Signup</h1>
-    <input type="text" name='name' required value={name} onChange={(e)=>setName(e.target.value)} placeholder='Name' /> <br />
-    <input type="email" name='email' required value={email} onChange={(e)=>setEmail(e.target.value)}  placeholder='Email' /> <br />
-    <input type="password" name='password' required value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='Password' /> <br />
-    <input type="number" name='age' required value={age} onChange={(e)=>setAge(e.target.value)} placeholder='Age' /> <br />
-    <input type="number" required value={contactNo} onChange={(e)=>setContactNo(e.target.value)} placeholder='ContactNo' /> <br />
+    <input type="text"  value={name} onChange={(e)=>setName(e.target.value)} placeholder='Name' /> <br />
+    <input type="email"  value={email}  onChange={(e)=>setEmail(e.target.value)}  placeholder='Email' /> <br />
+    <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='Password' /> <br />
+    <input type="number"  value={age} onChange={(e)=>setAge(e.target.value)} placeholder='Age' /> <br />
+    <input type="number" value={contactNo} onChange={(e)=>setContactNo(e.target.value)} placeholder='ContactNo' /> <br />
 
     <button  className='btn-btn' type='submit' onClick={handleClick} > Submit</button>
     <p className='para-signup'>Do you have an accunt?<a href="/login">login</a></p>

@@ -53,7 +53,7 @@ router.post("/signup", async (req,res)=>{
     });
     console.log(info);
 
-    res.json({msg: "Signup Successfully"});
+    res.json({msg: "Signup Successfully & Check your email"});
 
      } catch (error) {
         res.json({msg: error.message});

@@ -41,15 +41,17 @@ h1{
    
     margin-top: 8px;
    font-weight: 600;
-   color: white;
+   color: #fff;
    outline: none;
    border: none;
+   
    border-bottom: 1px solid white;
   
    
 }
 ::placeholder{
-    color: #fff;
+    color: black;
+    
 }
 
 
