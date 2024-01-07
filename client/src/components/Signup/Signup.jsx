@@ -16,7 +16,7 @@ const Signup = () => {
         return alert("Please fill the all details");
        }
     
-    const {data} = await axios.post("https://email-login-fjv7.onrender.com/user/signup",{
+    const {data} = await axios.post("https://email-verify-xpoa.onrender.com/user/signup",{
       name,email,password,age,contactNo,
     });
     console.log(data);

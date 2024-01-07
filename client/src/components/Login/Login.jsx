@@ -14,7 +14,7 @@ const Login = () => {
     if(!email || !password){
       return alert("Please fill the details");
     }else {
-    const response = await axios.post("https://email-login-fjv7.onrender.com/user/login",{
+    const response = await axios.post("https://email-verify-xpoa.onrender.com/user/login",{
       email,
       password,
       

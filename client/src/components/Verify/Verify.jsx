@@ -9,7 +9,7 @@ const Verify = () => {
    
     const verifyUser = async ()=>{
         try {
-            const response = await axios.get(`https://email-login-fjv7.onrender.com/user/verify/${token}`
+            const response = await axios.get(`https://email-verify-xpoa.onrender.com/user/verify/${token}`
             );
             alert(response.data.msg);
             setLoading(false);
